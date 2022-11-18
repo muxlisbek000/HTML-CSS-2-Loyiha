@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #eff4fd;
+}
+
+.logo{
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.nav{
+    display: flex;
+    width: 84%;
+    padding: 0px 0px;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.nav li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 10px 20px;
+
+}
+
+.nav a{
+    text-decoration: none;
+    color: rgb(13, 12, 12);
+    font-weight: 500;
+    font-size: 25px;
+    text-transform: uppercase;
+
+}
+.nav a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: rgb(255, 208, 0);
+    margin: auto;
+    display: block;
+
+}
+
+.nav a:hover::after{
+    width: 100%;
+    transition: .3s linear;
+}
+.nav a:hover{
+    color: rgb(255, 208, 0);
+}
+.info{
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section{
+    margin-left: 8%;
+    margin-top: 250px;
+}
+.section h1{
+    font-size: 45px;
+    color: #212121;
+    margin-bottom: 10px;
+}
+
+span{
+    color: rgb(247, 140, 9);
+}
+
+.section p{
+    color: #555;
+    line-height: 25px;
+    font-size: 18px;
+}
+.section a{
+    background-color: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s,left 1s;
+
+}
+.men{
+    height: 100%;
+}
+
+.images:hover .shape{
+    bottom: 40px;
+}
+
+.images:hover .men{
+    left: 45%;
+    cursor: pointer;
+}
